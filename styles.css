@@ -1,0 +1,146 @@
+*{
+    padding:0;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    background: hsl(216, 89%, 14%);
+}
+
+.panel{
+    width: 300px;
+    height: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 20px;
+    background: hsl(216, 89%, 14%);
+    box-shadow:  2px 2px 2px 3px rgba(0,0,0,0.2), -2px -2px 2px 3px rgba(0,0,0,0.2)
+}
+
+.panel>img{
+    max-width: 260px;
+    max-height: 260px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.overlay {
+    position: fixed; /* Sit on top of the page content */
+    width: 260px; /* Full width (cover the whole page) */
+    height: 260px; /* Full height (cover the whole page) */
+    margin: 20px;
+    background-color: rgb(64, 224, 208, 0.8); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+    border-radius: 20px;
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+.overlay img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.panel h1{
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+    transition: 1s ease-in-out;
+}
+
+.panel>p{
+    margin-left: 20px;
+    color:  hsl(210, 8%, 38%);
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.quote{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: hsl(210, 8%, 38%);
+    align-content: flex-start;
+}
+.eth{
+    display: flex;
+    color: turquoise;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.eth p{
+    margin-left: 5px;
+    color:  turquoise;
+    font-size: 12px;
+}
+.eth img{
+    max-height: 15px;
+}
+
+
+hr{
+    max-width: 260px;
+    margin: 20px;
+    border-color: hsl(210, 8%, 38%);
+}
+
+.time{
+    align-items: center;
+    display: flex;
+}
+
+.time p{
+    margin-left: 5px;
+    color:  hsl(210, 8%, 38%);
+    font-size: 12px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+footer img{
+    border:2px solid white;
+    border-radius: 50%;
+    max-width: 30px;
+    margin-left: 20px;
+}
+
+footer div{
+    margin-left: 20px;
+}
+
+footer .creation{
+    color: hsl(210, 8%, 38%);
+}
+
+footer .name{
+    color: white;
+    padding-left: 5px;
+    transition: 1s ease-in-out;
+}
+
+.panel h1:hover{
+    color: turquoise;
+    cursor: pointer;
+}
+
+footer .name:hover{
+    color: turquoise;
+    cursor: pointer;
+}
+
+.overlay:hover{
+    opacity: 1;
+    cursor: pointer;
+}
